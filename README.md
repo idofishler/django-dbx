@@ -16,5 +16,5 @@ Installation
 Run
 ---
 
-1. first ````python manage.py syncdb```
-2. then ````python manage.py runserver```
+1. first ```python manage.py syncdb```
+2. then ```python manage.py runserver```
