@@ -1,0 +1,12 @@
+{% extends "myapp/index.html" %}
+{% block body %}
+  <h2>Login</h2>
+  {% if error %}<p class="error"><strong>Error:</strong> {{ error }}{% endif %}
+  <form action="{% url 'myapp:login' %}" method="post">
+  	{% csrf_token %}
+	<input type="text" name="username" placeholder="username">
+	<input type="password" name="password" placeholder="password">
+    <input type="submit" value="Login">
+  </form>
+  Or: <a href="{% url 'myapp:dropbox_auth_start' %}">Signup via Dropbox</a>
+{% endblock %}

@@ -1,0 +1,15 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Django Dropbox</title>
+</head>
+<body>
+{% block body %}
+
+<p>Hi {{ dbx_account_info.display_name }}</p></br>
+<p>Your access token is {{ dbx_user.dbx_access_token }}</p>
+
+<a href="{% url 'myapp:logout' %}">logout</a>
+{% endblock %}
+</body>
+</html>

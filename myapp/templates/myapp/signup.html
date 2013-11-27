@@ -1,0 +1,12 @@
+{% extends "myapp/index.html" %}
+{% block body %}
+  <h2>Continue signup</h2>
+  {% if error %}<p class="error"><strong>Error:</strong> {{ error }}{% endif %}
+  <p>To complete signup choose your username and password</p>
+  <form action="{% url 'myapp:signup' %}" method="post">
+  	{% csrf_token %}
+	<input type="text" name="username" placeholder="username">
+	<input type="password" name="password" placeholder="password">
+    <input type="submit" value="Signup">
+  </form>
+{% endblock %}
