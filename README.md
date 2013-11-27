@@ -8,10 +8,10 @@ HTH :)
 Installation
 ------------
 
-1. You'll need a Dropbox API account of course
+1. You'll need a Dropbox API account of course.
 2. For testing add: ```http://localhost:8000/dropbox_auth_finish/``` to your OAuth redirect URIs at the dropbox developer admin for your app.
-3. Fill in your dropbox API key in the ```settings.py``` under ```DROPBOX_SETTINGS```
-4. install dropbox sdk for python: ```pip install dropbox```.
+3. Fill in your dropbox API keys in the ```settings.py``` under ```DROPBOX_SETTINGS```.
+4. Install dropbox sdk for python: ```pip install dropbox```.
 
 Run
 ---
